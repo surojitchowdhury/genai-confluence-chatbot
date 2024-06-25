@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Confluence Chat App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./static/styles/style_login.css">
+
+</head>
+<body style="background-color:black;">
+  <!-- partial:index.partial.html -->
+<div id="login-form-wrap">
+  <h2>Register for Confluence Chat</h2>
+  <form id="register" class="login-form" action="/register_complete" method="post">
+    <p>
+      <input type="email" class="email_id" id="email" name="email" placeholder="Email Address" pattern="[\w.%+-]+@company\.com" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="submit" id="register" value="register">
+    </p>
+  </form>
+</div><!--register-form-wrap-->
+<!-- partial -->
+  
+
+</body>
+</html>

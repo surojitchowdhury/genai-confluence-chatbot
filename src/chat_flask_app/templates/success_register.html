@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Confluence Chat App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./static/styles/style_login.css">
+
+</head>
+<body style="background-color:black;">
+  <!-- partial:index.partial.html -->
+<div id="login-form-wrap">
+  <b style='color:green;'>Successfully Registered! Please check your email.</b>
+  <h2>Login to Confluence Chat</h2>
+  <form id="login-form" class="login-form" action="/loginValidation" method="post">
+    <p>
+      <input type="email" class="email_id" id="email" name="email" placeholder="Email Address" pattern="[\w.%+-]+@company\.com" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+      <input type="text" class="totp" id="totp" name="totp" placeholder="totp" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="submit" id="login" value="Login">
+    </p>
+  </form>
+  <div id="create-account-wrap">
+    <p>Not a member? <a href="#">Register</a><p>
+  </div><!--create-account-wrap-->
+</div><!--login-form-wrap-->
+<!-- partial -->
+<!-- <p style='color:rgb(210, 33, 72);'>Following is temporary solution for registration! Registration details will be sent over email via AWS SES once it is hosted</p>
+<br>
+<br>
+<div style="text-align: center;">
+  <p style='color:rgb(69, 222, 67);'>Please register on Google Authenticator App using following QR code or manual code</p>
+<img src={{ messages['file_name'] }} alt="QR Code" style="width:200px;height:200px;">
+<br>
+<h1>Manual Code for Setup: {{ messages['code'] }}</h1>
+</div> -->
+</body>
+</html>
